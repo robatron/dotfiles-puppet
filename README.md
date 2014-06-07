@@ -1,13 +1,20 @@
-# Alexis Hevia's puppet files
-These puppet files should allow me to reconstruct my entire development environment on a blank Ubuntu 12.04 distribution
+# dotfiles-puppet
 
-## How To Use
-```
-sudo apt-get update
-sudo apt-get install puppet git
-git clone https://github.com/alexishevia/.puppet.git ~/.puppet
-sudo puppet apply --modulepath=$HOME/.puppet/modules ~/.puppet/manifests/devmachine-root.pp
-puppet apply --modulepath=$HOME/.puppet/modules ~/.puppet/manifests/devmachine.pp
+> Automated personal environment setup with Puppet 
+
+## Dependencies
+
+1. [Puppet](http://puppetlabs.com/)
+2. [Git](http://git-scm.com/)
+
+## Usage
+
+```bash
+git clone https://github.com/robatron/dotfiles-puppet.git ~/.dotfiles
+~/.dotfiles/apply.sh
 ```
 
+## Credits
+
+- ["Managing your Dotfiles with Puppet"](http://dev.alexishevia.com/2013/09/managing-your-dotfiles-with-puppet.html) by [Alexis Hevia](https://plus.google.com/103445555553925636690)
 
