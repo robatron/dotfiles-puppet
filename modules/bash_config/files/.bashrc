@@ -105,7 +105,10 @@ alias dotfiles-apply='~/.dotfiles/apply.sh'
 
 # meta
 alias bashrc-refresh='. ~/.bashrc'
-alias bashrc-edit='vim ~/.bashrc'
+alias bashrc-edit='\
+    vim ~/.dotfiles/modules/bash_config/files/.bashrc &&\
+    dotfiles-apply &&\
+    bashrc-refresh'
 
 # some more ls aliases
 alias ll='ls -alF'
