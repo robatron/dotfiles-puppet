@@ -10,7 +10,7 @@
 ## Usage
 
 ```bash
-git clone https://github.com/robatron/dotfiles-puppet.git ~/.dotfiles
+git clone git@github.com:robatron/dotfiles-puppet.git ~/.dotfiles
 ~/.dotfiles/apply.sh
 ```
 
