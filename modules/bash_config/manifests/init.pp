@@ -1,10 +1,9 @@
 class bash_config {
-
-  file { "/home/$id/.bashrc":
+  file { "$home/.bashrc":
+    replace => "no",
     owner => "$id",
     group => "$id",
     mode => 644,
     source => "puppet:///modules/bash_config/.bashrc",
   }
-
 }
