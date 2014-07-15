@@ -2,26 +2,22 @@
 
 > Automated personal environment setup with Puppet
 
-## Dependencies
-
-1. [Puppet](http://puppetlabs.com/)
-2. [Git](http://git-scm.com/)
-
-## Usage
-
-Clone this repo:
+1. Install [Puppet](http://puppetlabs.com/)
+   ([Mac](http://docs.puppetlabs.com/guides/install_puppet/install_osx.html))
+2. Install [Git](http://git-scm.com/) ([Mac](http://git-scm.com/download/mac))
+3. Clone this repo:
 
 ```bash
 git clone git@github.com:robatron/dotfiles-puppet.git ~/.dotfiles
 ```
 
-Apply default manifests:
+4. Apply default manifests:
 
 ```bash
 ~/.dotfiles/apply.sh
 ```
 
-Or, if on a Windows machine, apply default manifests from `CMD.exe` with:
+     - Or, if on a Windows machine, apply default manifests from `CMD.exe` with:
 
 ```bat
 ~/.dotfiles/apply.bat
