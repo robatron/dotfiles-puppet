@@ -7,21 +7,21 @@
 2. Install [Git](http://git-scm.com/) ([Mac](http://git-scm.com/download/mac))
 3. Clone this repo:
 
-```bash
-git clone git@github.com:robatron/dotfiles-puppet.git ~/.dotfiles
-```
+   ```bash
+   git clone git@github.com:robatron/dotfiles-puppet.git ~/.dotfiles
+   ```
 
 4. Apply default manifests:
 
-```bash
-~/.dotfiles/apply.sh
-```
+   ```bash
+   ~/.dotfiles/apply.sh
+   ```
 
      - Or, if on a Windows machine, apply default manifests from `CMD.exe` with:
 
-```bat
-~/.dotfiles/apply.bat
-```
+      ```bat
+      ~/.dotfiles/apply.bat
+      ```
 
 ## References
 
