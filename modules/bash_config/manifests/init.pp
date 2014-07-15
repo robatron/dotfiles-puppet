@@ -1,9 +1,7 @@
 class bash_config {
-  file { "$home/.bashrc":
-    replace => "no",
-    owner => "$id",
-    group => "$id",
-    mode => 644,
-    source => "puppet:///modules/bash_config/.profile",
-  }
+    file { "$home/.profile":
+        ensure => "link",
+        mode => 644,
+        target => "$dotfiles/modules/bash_config/files/.profile",
+    }
 }
