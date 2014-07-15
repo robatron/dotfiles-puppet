@@ -4,6 +4,6 @@ class bash_config {
     owner => "$id",
     group => "$id",
     mode => 644,
-    source => "puppet:///modules/bash_config/.bashrc",
+    source => "puppet:///modules/bash_config/.profile",
   }
 }
