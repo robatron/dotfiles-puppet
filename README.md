@@ -14,14 +14,8 @@
 4. Apply default manifests:
 
    ```bash
-   ~/.dotfiles/apply.sh
+   ~/.dotfiles/apply.sh    # ( Use `apply.bat` for Windows )
    ```
-
-     - Or, if on a Windows machine, apply default manifests from `CMD.exe` with:
-
-      ```bat
-      ~/.dotfiles/apply.bat
-      ```
 
 ## References
 
