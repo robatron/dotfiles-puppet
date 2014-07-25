@@ -12,12 +12,6 @@
    ```bash
    git clone git@github.com:robatron/dotfiles-puppet.git ~/.dotfiles
    ```
-   
-4. Install Puppet module dependencies
-
-   ```bash
-   ~/.dotfiles/install-modules.sh
-   ```
 
 4. Apply default manifests:
 

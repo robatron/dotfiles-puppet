@@ -8,4 +8,8 @@ export FACTER_HOME="$HOME"
 export FACTER_DOTFILES="$DIR"
 export FACTER_MODULE_PATH="$DIR/modules"
 
+# Install module dependencies
+puppet module install puppetlabs-vcsrepo
+
+# Apply default config
 puppet apply --modulepath=$MODULEPATH $DIR/manifests/default.pp
