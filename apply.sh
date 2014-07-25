@@ -2,7 +2,7 @@
 # Puppet-apply script for UNIX machines
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-MODULEPATH="$DIR/modules:$( puppet config print modulepath)"
+MODULEPATH="$DIR/modules:$( puppet config print modulepath )"
 
 export FACTER_HOME="$HOME"
 export FACTER_DOTFILES="$DIR"
