@@ -1,10 +1,7 @@
 class vim_config {
-  file { "$home/.vimrc":
-    replace => "no",
-    ensure => "link",
-    owner => "$id",
-    group => "$id",
-    mode => 644,
-    source => "puppet:///modules/vim_config/.vimrc",
-  }
+    file { "$home/.vimrc":
+        ensure => "link",
+        mode => 644,
+        target => "$module_path/vim_config/files/.vimrc"
+    }
 }
