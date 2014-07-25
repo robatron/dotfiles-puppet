@@ -35,13 +35,10 @@ fi
 TERM=xterm-256color
 
 # enable color support a few common commands
-alias ls='ls --color'
+alias ls='ls -G'
 alias grep='grep --color'
 alias fgrep='fgrep --color'
 alias egrep='egrep --color'
-
-# start in home directory
-cd
 
 # Environment
 # -----------
