@@ -5,7 +5,7 @@ class bash_config {
         target => "$module_path/bash_config/files/.profile"
     }
 
-    vcsrepo { "$home/.git-bash-prompt":
+    vcsrepo { "$home/.bash/git-aware-prompt":
         ensure   => present,
         provider => git,
         source => 'git://github.com/jimeh/git-aware-prompt.git',

@@ -5,6 +5,11 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
+# Configure prompt
+export GITAWAREPROMPT=~/.bash/git-aware-prompt
+source $GITAWAREPROMPT/main.sh
+export PS1="\u@\h \w \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -32,7 +37,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 # enable 256-color support in terminal
-TERM=xterm-256color
+# TERM=xterm-256color
 
 # enable color support a few common commands
 alias ls='ls -G'
